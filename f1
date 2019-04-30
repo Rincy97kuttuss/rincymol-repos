@@ -1,0 +1,17 @@
+echo "enter the number"
+read n;
+sum=0;
+i=2;
+while [ $n -gt 0 ]
+do
+s=$(($n % 10));
+sum=$sum+$s;
+done
+echo "sum is  $sum";
+if [ $sum % $i -eq 0 ]
+then
+echo "the sum is even";
+else
+echo " the sum is odd";
+fi
+
